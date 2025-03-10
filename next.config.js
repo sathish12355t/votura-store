@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',          // Enables static HTML export (Next.js 13+)
-    reactStrictMode: true,     // Helps catch potential problems in React
+    output: 'export',
+    reactStrictMode: true,
     images: {
-      unoptimized: true        // Required if using the <Image> component with next export
-    }
+      unoptimized: true, // Required for 'output: export'
+    },
   };
   
   module.exports = nextConfig;
